@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group 'com.github.cassioamartim'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    def lombok = 'org.projectlombok:lombok:1.18.24'
+    compileOnly(lombok)
+    annotationProcessor(lombok)
+}
